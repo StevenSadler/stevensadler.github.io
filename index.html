@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Steven Sadler Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Header -->
+					<header id="header">
+						<a class="logo">Steven Sadler</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/stevenjsadler/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/StevenSadler" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<h2>Welcome to my Portfolio Website</a></h2>
+									<p>My name is Steven Sadler. I am passionate about technology and about learning new technologies.<br />
+                                        Here are some projects that show the breadth of my interest and skills.<br /><br />
+                                        Brain Dead is a twin stick shooter game built in Unity.
+                                        Painting with Style is a computational photography project that converts a photograph into a novel image.
+                                        Sonar Bot uses AI to face a nearby object.
+                                        Bitmask painter is a level design tool.
+									</p>
+								</header>
+							</article>
+
+						<!-- Posts -->
+							<section class="posts">
+								<article>
+									<header>
+										<h2>Brain Dead game</h2>
+									</header>
+									<a class="image fit"><img src="images/braindead004_806.png" alt="" /></a>
+                                    
+                                    <p>Player character and gameplay including input, player control, animator setup, weapons, and projectile system.</p>
+                                    <video width="480" height="360" controls>
+                                        <source src="videos/braindead_004_male_assault_rifle.mp4" type="video/mp4">
+                                    </video>
+                                    <p>This twin stick shooter built in Unity gives the player a choice between a female or male player character. All attacks use the projectile system. Melee projectiles have a speed of 0 and only exist for one frame. Projectiles are triggers that hit colliders and activate depending on projectile data and collider layers.</p>
+                                    <p>Weapons include fist, pistol, assault rifle, shotgun, serum gun, and alarm clock. The serum gun fires a special projectile that heals injured humans or damages zombies. The alarm clock emits a sound that attracts zombies into a cluster.</p>
+                                    
+                                    <a class="image fit"><img src="images/braindead014_1699.png" alt="" /></a>
+                                    <video width="480" height="360" controls>
+                                        <source src="videos/braindead_022_female_weapon_sample.mp4" type="video/mp4">
+                                    </video>
+								</article>
+                                <article>
+									<header>
+										<h2>Painting with Style</h2>
+									</header>
+									<a class="image fit"><img src="images/hydrant_stage3.png" alt="" /></a>
+                                    <p>Replication of the research paper "Painterly Rendering with Curved Brush Strokes of Multiple Sizes" by Aaron Hertzmann.</p>
+                                    <p>This Python project creates stylized images from photographic images, either automatically or with some manual input from a user. Styles control the appearance of brush strokes such as curvature, min length, max length, and opacity. Each style can have multiple brush sizes of decreasing size to keep refining detail.</p>
+                                    <p>Different styles can be used on different layers. An optional masking layer adds detail with smaller brushes only to user-defined areas. These additional features provide the artist more flexibility experimenting with mixing styles.</p>
+                                    
+                                    <a class="image fit"><img src="images/hydrant_stage1.jpg" alt="" /></a>
+									<p>This is an example of painting a style with 5 decreasing brush sizes. The input is a photo and a style. The canvas begins as white. The canvas is subdivided into a grid based on brush size. In each grid cell, the pixel that is furthest from the correct color in the photo is painted with a circle brush of the correct color.</p>
+                                    <p>A separate layer for each brush size is created with the canvas from the previous layer. As the brush sizes decrease, the gaps between larger brushes are filled in.</p>
+								</article>
+								<article>
+									<header>
+										<h2>Sonar Bot</h2>
+									</header>
+                                    <a class="image fit"><img src="images/Arduino_Robot.jpg" alt="" /></a>
+									<p>This Arduino differential drive robot uses parallel-mounted ultrasonic sensors to face an object at the surface normal and a proportional-derivative (PD) controller to minimize overshoot and oscillation. </p>
+                                    <video width="480" height="360" controls>
+                                        <source src="videos/Sonarbot_PD.mp4" type="video/mp4">
+                                    </video>
+								</article>
+                                <article>
+									<header>
+										<h2>Bitmask Painter</h2>
+									</header>
+                                    <a class="image fit"><img src="images/readme_app_image2.jpg" alt="" /></a>
+									<p>This is a desktop Python app built with tkinter and PyInstaller. A level designer can assign each pixel of a 2D world map to any number of bitmasks by painting the masks. The meaning of each bitmask is determined by the designer. Masks can be added, removed, renamed, or recolored. Games randomly distribute assets by using Poisson disks filtered by the masks before procedurally placing them.</p>
+                                    <a class="image fit"><img src="images/Poisson_disk_forest_map.jpg" alt="" /></a>
+								</article>
+							</section>
+					</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
